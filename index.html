@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="nav">
+
+            <div class="navbar">
+                <img src="assets/Nike Swoosh.png" alt="logo">
+                <ul>
+                    <li>New & Featured</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Customise</li>
+                </ul>
+            </div>
+            
+            <div class="navicon">
+                <i class="ri-search-line"></i>
+                <i class="ri-heart-line"></i>
+                <i class="ri-shopping-bag-line"></i>
+                <i class="ri-menu-line"></i>
+            </div>
+
+        </div>
+
+
+        <div class="content">
+
+            <div class="content-video">
+                <video src="assets/nikevid.mp4" height="800px" width="100%" loop muted autoplay ></video>
+            </div>
+
+            <div class="content-text">
+                <h1>Winning isn't for everyone</h1>
+                <p>It's for those who do wharever it takes.</p>
+                <button class="btn">SHOP NOW</button>
+                
+            </div>
+            
+            <h2>Featured</h2>
+            
+            <div class="content-shop">
+
+                <div class="product">
+                    <img src="assets/pegasus-41.png" alt="pegasus-41">
+                    <h3>pegasus-41</h3>
+                    <p class="category">women's shoe</p>
+                    <p class="color">1 color</p>
+                    <p class="prize">MRP. 11999</p>
+                </div>
+
+                <div class="product">
+                    <img src="assets/pegasus-41.2.png" alt="pegsus-42.2">
+                    <h3>pegasus 41.2</h3>
+                    <p class="category">men's shoe</p>
+                    <p class="color">2 color</p>
+                    <p class="prize">MRP. 8999</p>
+                </div>
+
+                <div class="product">
+                    <img src="assets/pegasus-plus.png" alt="pegasus-plus">
+                    <h3>pegasus plus</h3>
+                    <p class="category">men's shoe</p>
+                    <p class="color">3 color</p>
+                    <p class="prize">MRP. 12499</p>
+                </div>
+
+                <div class="product">
+                    <img src="assets/pegasus-trail-4-gore-tex.png" alt="pegasus-trail-4-gore-tex">
+                    <h3>pegasus trail 4 gore tex</h3>
+                    <p class="category">women's shoe</p>
+                    <p class="color">1 color</p>
+                    <p class="prize">MRP. 14999</p>
+                </div>
+
+                <div class="product">
+                    <img src="assets/pegasus-trail-5.png" alt="pegasus-trail-5">
+                    <h3>pegasus trail 5</h3>
+                    <p class="category">men's shoe</p>
+                    <p class="color">5 color</p>
+                    <p class="prize">MRP. 10499</p>
+                </div>
+        </div>
+    </div>
+
+
+    <script>
+        // JavaScript for horizontal scrolling
+        document.querySelector('.content-shop').addEventListener('wheel', function(event) {
+            if (event.deltaY !== 0) {
+                event.preventDefault();
+                this.scrollLeft += event.deltaY;
+            }
+        });
+    </script>
+</body>
+
+</html>
